@@ -1,0 +1,62 @@
+	<html>
+
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
+
+		<script type="text/javascript">  
+		$(document).ready(function()  
+		{  
+			$('.signup').hide();  
+			$('#signup').click(function()  
+			{  
+			$('.login').slideUp('slow');  
+			$('.signup').slideDown('slow');  
+			});  
+			$('#login').click(function()  
+			{  
+				$('.signup').slideUp('slow');  
+				$('.login').slideDown('slow');  
+			});   
+		});  
+		</script>  
+	</head>
+
+
+	<body>
+
+
+		<form name="myform">  
+			<input name="option" id="login" checked="checked" type="radio"> <span class="option">Login</span>  
+			<input name="option" id="signup" type="radio"> <span class="option">Sign up</span>  
+		</form>
+
+		
+		
+		
+			<div class="login">  
+		    <div class="detail">Please enter your username and password.</div>  
+		    <form name="”login”" action="””">  
+			<label>Username</label><br>  
+			<input name="username" class="input" id="username" type="text"><br>  
+			<label>Password</label><br>  
+			<input name="password" class="input" id="password" type="password"><br>  
+			<input value="Login" class="button" type="submit">   
+			</form>  
+			</div>  
+		
+		<div class="signup">  
+			<div class="detail">Enter you information since you dont have an username and password.</div>  
+			<form name="”signup”" action="””">  
+			<label>Name</label><br>  
+			<input name="name" class="input" id="name" type="text"><br>  
+			<label>Email</label><br>  
+			<input name="email" class="input" id="email" type="text"><br>  
+			<label>Enter password</label><br>  
+			<input name="signup-password" class="input" id="signup-password" type="password"><br>  
+			<input value="Create Account" class="button" type="submit">  
+		</form>  
+		</div>  
+		
+		</body>
+		
+		<html>
